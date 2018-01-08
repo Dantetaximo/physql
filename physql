@@ -41,7 +41,7 @@ if [ ! -z "$2" ]; then
 		mymessage "$res Restarting PostgreSQL"
 		sudo service postgresql start
 		
-		mymessage "$res Physical copy fihished: "$2
+		mymessage "$res Physical copy finished: "$2
 	elif [ "$1" = 'restore' ]; then
 		if [ -d "$2" ]; then
 			mymessage "$res Stopping PostgreSQL server"
