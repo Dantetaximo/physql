@@ -37,7 +37,9 @@ if [ ! -z "$2" ]; then
 		sudo service postgresql stop
 		
 		mymessage "$res Creating physical copy of PostgreSQL"
-		sudo rsync -a $data_dir"/main" $2
+		sudo rsync -ar $data_dir"/main" $2
+		sudo rsync -ar $data_dir"/main" $2
+		sudo rsync -ar $data_dir"/main" $2
 		
 		mymessage "$res Restarting PostgreSQL"
 		sudo service postgresql start
