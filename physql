@@ -25,9 +25,9 @@ function myhelp {
 	echo "Tool for create and restore physical versions of PostgreSQL"
 	echo "Use:"
 	echo "Create a snapshot of the databases"
-	echo "$ bash physical_restore snapshot [dirname]"
+	echo "$ ./physql snapshot [dirname]"
 	echo "Restore a snapshot of the databases"
-	echo "$ bash physical_restore restore [dirname]"
+	echo "$ ./physql restore [dirname]"
 }
 
 if [ ! -z "$2" ]; then
