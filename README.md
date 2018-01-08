@@ -10,3 +10,14 @@ Physical backups of all the PostgreSQL databases. Allows you to easily and quick
 ```bash
 ./physql restore [dirname]
 ```
+## Requirements
+- Edit variables in the script for your PostgreSQL version and directories
+```bash
+ver=9.6
+data_dir="/var/lib/postgresql/"$ver
+bin_dir="/usr/lib/postgresql/"$ver
+```
+- Notify (if you want desktop messages)
+```bash
+sudo apt install notify-osd
+```
